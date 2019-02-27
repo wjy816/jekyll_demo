@@ -1,0 +1,68 @@
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        /*标签选择器*/
+        p{
+            color:red;
+        }
+        /*类选择器*/
+        .first{
+            color:red;
+        }
+        .second{
+            color:blue;
+        }
+        /*id选择器*/
+        #first{
+            color:yollew;
+        }
+        #second{
+            color:green;
+        }
+        /*群组选择器*/
+        .first, #second, h1{
+        }
+        /*选择器组合*/
+        div.first{
+        }
+        /*后代选择器*/
+        div p{
+        }
+        /*子标签选择器*/
+        div > p{
+        }
+        /*相邻兄弟选择器*/
+        div ＋ p{
+        }
+        /*属性选择器*/
+        div[name]{
+        }
+        div[name][age]{
+        }
+        div[name="jack"]{
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <p>p1</p>
+        <span>
+            <p>p2</p>
+        </span>
+    </div>
+    <div name="jack">div1</div>
+    <div age="10">div2</div>
+    <p>与div相邻的p</p>
+
+    <div class="first">123</div>
+    <div id="first">123</div>
+
+    <p class="first second">123</p>
+    <p id="second">123</p>
+
+    <h1>hhh</h1>
+</body>
+</html>
